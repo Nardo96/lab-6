@@ -3,7 +3,7 @@ def encode(data):
     #Takes in a string password (int only) and shifts each integer up by 3
     encoded = []
     for char in data:
-        encoded.append(str(int(char)+3))
+        encoded.append(str((int(char)+3)%10))
     return ''.join(encoded)
     
 def decode(data):
